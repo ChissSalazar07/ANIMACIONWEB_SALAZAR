@@ -1,65 +1,85 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso Animacion de Grtficos</title>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+body{
+    background:#e9f7ff;
+}
 
-    <!-- Encabezado -->
-    <div class="encabezado">
-        <h1>CURSO ANIMACIÓN DE GRÁFICOS</h1>
-        <p>Profesor: Niels Arias Campos</p>
-    </div>
+/* Encabezado */
 
-    <!-- Contenedor principal -->
-    <div class="contenedor">
+.encabezado{
+    width:100%;
+    background:linear-gradient(to right,#5bbcff,#2398f5);
+    padding:30px;
+    text-align:center;
+    color:white;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
 
-        <!-- Video 1 -->
-        <div class="video">
-            <h2>Video 1</h2>
+.encabezado h1{
+    font-size:35px;
+    margin-bottom:10px;
+}
 
-            <!-- Aquí colocarás el video -->
-            <div class="espacio-video">
-                Próximamente...
-            </div>
+.encabezado p{
+    font-size:18px;
+}
 
-        </div>
+/* Contenedor principal */
 
-        <!-- Video 2 -->
-        <div class="video">
-            <h2>Video 2</h2>
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
 
-            <div class="espacio-video">
-                Próximamente...
-            </div>
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
 
-        </div>
+/* Tarjetas */
 
-        <!-- Video 3 -->
-        <div class="video">
-            <h2>Video 3</h2>
+.video{
+    width:48%;
+    background:white;
+    margin-bottom:30px;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
 
-            <div class="espacio-video">
-                Próximamente...
-            </div>
+.video h2{
+    color:#1694e8;
+    margin-bottom:15px;
+}
 
-        </div>
+/* Espacio para insertar videos */
 
-        <!-- Video 4 -->
-        <div class="video">
-            <h2>Video 4</h2>
+.espacio-video{
+    width:100%;
+    height:280px;
+    border:3px dashed #7dc9ff;
+    border-radius:10px;
 
-            <div class="espacio-video">
-                Próximamente...
-            </div>
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-        </div>
+    background:#f7fcff;
+    color:#4f88a8;
+    font-size:20px;
+}
 
-    </div>
+/* Responsive */
 
-</body>
-</html>
+@media(max-width:800px){
+
+.video{
+    width:100%;
+}
+
+}
